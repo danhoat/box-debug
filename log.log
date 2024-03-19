@@ -1,0 +1,19 @@
+UPDATE wp_options SET option_value = REPLACE(option_value, 'https://agentsync.com.au', 'http://localhost/wp') WHERE option_name = 'home' OR option_name = 'siteurl';
+UPDATE wp_posts SET post_content = REPLACE (post_content, 'https://agentsync.com.au', 'http://localhost/wp');
+UPDATE wp_posts SET post_excerpt = REPLACE (post_excerpt, 'https://agentsync.com.au', 'http://localhost/wp');
+UPDATE wp_postmeta SET meta_value = REPLACE (meta_value, 'https://agentsync.com.au','http://localhost/wp');
+UPDATE wp_termmeta SET meta_value = REPLACE (meta_value, 'https://agentsync.com.au','http://localhost/wp');
+UPDATE wp_comments SET comment_content = REPLACE (comment_content, 'https://agentsync.com.au', 'http://localhost/wp');
+UPDATE wp_comments SET comment_author_url = REPLACE (comment_author_url, 'https://agentsync.com.au','http://localhost/wp');
+UPDATE wp_posts SET guid = REPLACE (guid, 'https://agentsync.com.au', 'http://localhost/wp') WHERE post_type = 'attachment';
+
+
+
+UPDATE as32_options SET option_value = REPLACE(option_value, 'https://wordpress-1078711-3793154.cloudwaysapps.com', 'http://dichvu139.com') WHERE option_name = 'home' OR option_name = 'siteurl';
+UPDATE as32_posts SET post_content = REPLACE (post_content, 'https://wordpress-1078711-3793154.cloudwaysapps.com', 'http://dichvu139.com');
+UPDATE as32_posts SET post_excerpt = REPLACE (post_excerpt, 'https://wordpress-1078711-3793154.cloudwaysapps.com', 'http://dichvu139.com');
+UPDATE as32_postmeta SET meta_value = REPLACE (meta_value, 'https://wordpress-1078711-3793154.cloudwaysapps.com','http://dichvu139.com');
+UPDATE as32_termmeta SET meta_value = REPLACE (meta_value, 'https://wordpress-1078711-3793154.cloudwaysapps.com','http://dichvu139.com');
+UPDATE as32_comments SET comment_content = REPLACE (comment_content, 'https://wordpress-1078711-3793154.cloudwaysapps.com', 'http://dichvu139.com');
+UPDATE as32_comments SET comment_author_url = REPLACE (comment_author_url, 'https://wordpress-1078711-3793154.cloudwaysapps.com','http://dichvu139.com');
+UPDATE as32_posts SET guid = REPLACE (guid, 'https://wordpress-1078711-3793154.cloudwaysapps.com', 'http://dichvu139.com');
