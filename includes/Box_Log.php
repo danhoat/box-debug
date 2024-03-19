@@ -22,7 +22,3 @@ function box_log($msg){
     $log = new Class_Box_Log();
     $log->general($msg); //use for general errors
 }
-
-
-
-
