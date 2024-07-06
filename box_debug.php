@@ -38,6 +38,7 @@ Class Box_Debug{
     }
 
 }
+
 new Box_Debug();
 
 

@@ -1,6 +1,7 @@
 <?php 
 
 Class Class_Box_Log {
+    
     const GENERAL_ERROR_DIR = ABSPATH.'/wp-content/box_log.log';
 
     public function general($msg)
