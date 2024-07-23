@@ -18,7 +18,6 @@ function box_clone_image_from_url($image_url){
 }
 
 
-
 /**
  * Clone an avatar image to 1 attachmen post + insert new record in custom table. 
  * Dùng để clone 1 ảnh trong site của mình thành attachment.
@@ -42,9 +41,7 @@ function box_clone_image_from_path($image_path){
 	$new_file   	= wp_unique_filename( $upload_path, $file_name );
 	$new_file_path 	= $upload_path.'/'.$new_file;
 	$new_file_url 	= $upload_url.'/'.$new_file;
-
-
-
+	
 	copy($image_path, $new_file_path);
 
 	$filetype 	= wp_check_filetype( $file_name, null );
