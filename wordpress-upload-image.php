@@ -41,7 +41,7 @@ function box_clone_image_from_path($image_path){
 	$new_file   	= wp_unique_filename( $upload_path, $file_name );
 	$new_file_path 	= $upload_path.'/'.$new_file;
 	$new_file_url 	= $upload_url.'/'.$new_file;
-	
+
 	copy($image_path, $new_file_path);
 
 	$filetype 	= wp_check_filetype( $file_name, null );
@@ -56,5 +56,4 @@ function box_clone_image_from_path($image_path){
 	$attach_data 	= wp_generate_attachment_metadata( $attach_id, $new_file_path );
 	wp_update_attachment_metadata( $attach_id, $attach_data );
 
-	
 }
