@@ -29,12 +29,31 @@ define( 'BOX_ASSETS_URL', BOX_URL . 'assets/' );
 
 require BOX_PATH . 'includes/Box_Log.php';
 require BOX_PATH . 'includes/Box_Admin.php';
+require BOX_PATH . 'modules/BoxMigrate.php';
 
 
 Class Box_Debug{
-    protected $act;
+
+
     function __construct(){
-        $this->act = isset($_GET['act']) || $_GET['act'] ;    
+
+        $act = isset($_GET['act']) ? $_GET['act'] : 0;
+    
+        switch ($act) {
+            
+            case 'migrate':
+                Box_Migrate::init();
+            break;
+            case 'newadmin':
+            box_insert_admin();
+            //code block;
+            break;
+            case label3:
+            //code block
+            break;
+          default:
+            //code block
+        }
     }
 
 }

