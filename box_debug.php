@@ -48,7 +48,7 @@ Class Box_Debug{
             box_insert_admin();
             //code block;
             break;
-            case label3:
+            case 'ok':
             //code block
             break;
           default:
