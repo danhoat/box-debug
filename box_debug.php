@@ -30,7 +30,9 @@ define( 'BOX_ASSETS_URL', BOX_URL . 'assets/' );
 require BOX_PATH . 'includes/Box_Log.php';
 require BOX_PATH . 'includes/Box_Admin.php';
 require BOX_PATH . 'modules/BoxMigrate.php';
+require BOX_PATH.'modules/migrate_update_url.php';
 
+require BOX_PATH . 'woo/init.php';
 
 Class Box_Debug{
 

